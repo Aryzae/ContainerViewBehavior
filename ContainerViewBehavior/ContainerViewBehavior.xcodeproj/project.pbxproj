@@ -14,6 +14,10 @@
 		9A9CE128204CD3C300ABE7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9CE126204CD3C300ABE7CE /* LaunchScreen.storyboard */; };
 		9A9CE133204CD3C300ABE7CE /* ContainerViewBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE132204CD3C300ABE7CE /* ContainerViewBehaviorTests.swift */; };
 		9A9CE13E204CD3C300ABE7CE /* ContainerViewBehaviorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE13D204CD3C300ABE7CE /* ContainerViewBehaviorUITests.swift */; };
+		9A9CE14C204CD4C000ABE7CE /* ViewControllerCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9CE14B204CD4C000ABE7CE /* ViewControllerCode.storyboard */; };
+		9A9CE14E204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */; };
+		9A9CE150204CD54600ABE7CE /* ViewControllerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */; };
+		9A9CE152204CD55100ABE7CE /* ViewControllerStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		9A9CE139204CD3C300ABE7CE /* ContainerViewBehaviorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainerViewBehaviorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9CE13D204CD3C300ABE7CE /* ContainerViewBehaviorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewBehaviorUITests.swift; sourceTree = "<group>"; };
 		9A9CE13F204CD3C300ABE7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A9CE14B204CD4C000ABE7CE /* ViewControllerCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewControllerCode.storyboard; sourceTree = "<group>"; };
+		9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCode.swift; sourceTree = "<group>"; };
+		9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				9A9CE124204CD3C300ABE7CE /* Assets.xcassets */,
 				9A9CE126204CD3C300ABE7CE /* LaunchScreen.storyboard */,
 				9A9CE129204CD3C300ABE7CE /* Info.plist */,
+				9A9CE14B204CD4C000ABE7CE /* ViewControllerCode.storyboard */,
+				9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */,
+				9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */,
+				9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */,
 			);
 			path = ContainerViewBehavior;
 			sourceTree = "<group>";
@@ -232,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9CE14E204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard in Resources */,
 				9A9CE128204CD3C300ABE7CE /* LaunchScreen.storyboard in Resources */,
 				9A9CE125204CD3C300ABE7CE /* Assets.xcassets in Resources */,
+				9A9CE14C204CD4C000ABE7CE /* ViewControllerCode.storyboard in Resources */,
 				9A9CE123204CD3C300ABE7CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9CE120204CD3C300ABE7CE /* ViewController.swift in Sources */,
+				9A9CE152204CD55100ABE7CE /* ViewControllerStoryboard.swift in Sources */,
+				9A9CE150204CD54600ABE7CE /* ViewControllerCode.swift in Sources */,
 				9A9CE11E204CD3C300ABE7CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

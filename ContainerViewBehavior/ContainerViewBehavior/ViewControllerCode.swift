@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewControllerCode.swift
 //  ContainerViewBehavior
 //
 //  Created by Sho Ito on 2018/03/05.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerCode: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func touchUpInsideCodeContainerView(_ sender: UIButton) {
-    }
-
-    @IBAction func touchUpInsideStoryboardContainerView(_ sender: UIButton) {
+    @IBAction func closeSelf(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
 
 }
-
