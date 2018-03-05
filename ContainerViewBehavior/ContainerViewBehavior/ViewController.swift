@@ -21,9 +21,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchUpInsideCodeContainerView(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "ViewControllerCode", bundle: .main)
+        let vc = storyboard.instantiateInitialViewController() as! UINavigationController
+        present(vc, animated: true)
     }
 
     @IBAction func touchUpInsideStoryboardContainerView(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "ViewControllerStoryboard", bundle: .main)
+        let vc = storyboard.instantiateInitialViewController() as! UINavigationController
+        present(vc, animated: true)
     }
 
 }

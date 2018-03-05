@@ -33,20 +33,69 @@
                     <view key="view" contentMode="scaleToFill" id="D1a-fB-quq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiB-XX-qny">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tiB-XX-qny" firstAttribute="top" secondItem="nLP-Gh-Jen" secondAttribute="top" id="erm-qb-Ppt"/>
+                            <constraint firstItem="nLP-Gh-Jen" firstAttribute="trailing" secondItem="tiB-XX-qny" secondAttribute="trailing" id="kjB-5N-rgX"/>
+                            <constraint firstItem="tiB-XX-qny" firstAttribute="leading" secondItem="nLP-Gh-Jen" secondAttribute="leading" id="q8p-Yx-gn3"/>
+                            <constraint firstItem="nLP-Gh-Jen" firstAttribute="bottom" secondItem="tiB-XX-qny" secondAttribute="bottom" id="vOy-uZ-4Xe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nLP-Gh-Jen"/>
                     </view>
                     <navigationItem key="navigationItem" id="MKB-ld-z99">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="f6F-Gk-CgX">
+                            <connections>
+                                <action selector="changeContent:" destination="E6M-82-DkH" id="Qd3-Al-LcA"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="O9k-Cx-Dbq">
                             <connections>
                                 <action selector="closeSelf:" destination="E6M-82-DkH" id="YI4-WK-xat"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="tiB-XX-qny" id="uWJ-Ly-Kvt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wZ-3F-jek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="449" y="79"/>
+        </scene>
+        <!--View Controller Code ContainerA-->
+        <scene sceneID="4AQ-6c-LcF">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerCodeContainerA" id="CWx-S8-NUI" customClass="ViewControllerCodeContainerA" customModule="ContainerViewBehavior" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJx-YS-5Dp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.64094857890520818" green="0.79363951636497532" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7RI-d5-EdY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ega-Ih-2sG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="-248"/>
+        </scene>
+        <!--View Controller Code ContainerB-->
+        <scene sceneID="8F7-qS-Lcn">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerCodeContainerB" id="5OX-35-XFI" customClass="ViewControllerCodeContainerB" customModule="ContainerViewBehavior" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1Z-Mp-sgw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.49635276255783634" green="0.84136687665782495" blue="0.45693202771207092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="udl-iJ-aHh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9Q-tz-cTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="424"/>
         </scene>
     </scenes>
 </document>

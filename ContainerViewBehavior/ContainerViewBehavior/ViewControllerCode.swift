@@ -10,6 +10,10 @@ import UIKit
 
 class ViewControllerCode: UIViewController {
 
+    @IBOutlet weak var containerView: UIView!
+    var containerA: ViewControllerCodeContainerA = ViewControllerCodeContainerA.initiate()
+    var containerB: ViewControllerCodeContainerB = ViewControllerCodeContainerB.initiate()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +26,32 @@ class ViewControllerCode: UIViewController {
 
     @IBAction func closeSelf(_ sender: UIBarButtonItem) {
         dismiss(animated: true)
+    }
+
+    @IBAction func changeContent(_ sender: UIBarButtonItem) {
+        didMove(toParentViewController: self)
+    }
+
+    override func didMove(toParentViewController parent: UIViewController?) {
+        if childViewControllers.contains(containerA) {
+            containerA.removeContent()
+            addContainerB()
+        } else {
+            containerB.removeContent()
+            addContainerA()
+        }
+    }
+
+    func addContainerA() {
+        addChildViewController(containerA)
+        containerView.addSubview(containerA.view)
+        containerA.didMove(toParentViewController: self)
+    }
+
+    func addContainerB() {
+        addChildViewController(containerB)
+        containerView.addSubview(containerB.view)
+        containerB.didMove(toParentViewController: self)
     }
 
 }

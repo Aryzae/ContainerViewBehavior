@@ -18,6 +18,8 @@
 		9A9CE14E204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */; };
 		9A9CE150204CD54600ABE7CE /* ViewControllerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */; };
 		9A9CE152204CD55100ABE7CE /* ViewControllerStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */; };
+		9A9CE154204CD78100ABE7CE /* ViewControllerCodeContainerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE153204CD78100ABE7CE /* ViewControllerCodeContainerA.swift */; };
+		9A9CE156204CD78E00ABE7CE /* ViewControllerCodeContainerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9CE155204CD78E00ABE7CE /* ViewControllerCodeContainerB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
 		9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCode.swift; sourceTree = "<group>"; };
 		9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStoryboard.swift; sourceTree = "<group>"; };
+		9A9CE153204CD78100ABE7CE /* ViewControllerCodeContainerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCodeContainerA.swift; sourceTree = "<group>"; };
+		9A9CE155204CD78E00ABE7CE /* ViewControllerCodeContainerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCodeContainerB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				9A9CE129204CD3C300ABE7CE /* Info.plist */,
 				9A9CE14B204CD4C000ABE7CE /* ViewControllerCode.storyboard */,
 				9A9CE14F204CD54600ABE7CE /* ViewControllerCode.swift */,
+				9A9CE153204CD78100ABE7CE /* ViewControllerCodeContainerA.swift */,
+				9A9CE155204CD78E00ABE7CE /* ViewControllerCodeContainerB.swift */,
 				9A9CE14D204CD4D100ABE7CE /* ViewControllerStoryboard.storyboard */,
 				9A9CE151204CD55100ABE7CE /* ViewControllerStoryboard.swift */,
 			);
@@ -277,6 +283,8 @@
 				9A9CE152204CD55100ABE7CE /* ViewControllerStoryboard.swift in Sources */,
 				9A9CE150204CD54600ABE7CE /* ViewControllerCode.swift in Sources */,
 				9A9CE11E204CD3C300ABE7CE /* AppDelegate.swift in Sources */,
+				9A9CE156204CD78E00ABE7CE /* ViewControllerCodeContainerB.swift in Sources */,
+				9A9CE154204CD78100ABE7CE /* ViewControllerCodeContainerA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
